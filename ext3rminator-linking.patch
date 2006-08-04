@@ -1,0 +1,9 @@
+diff -Nur ext3rminator-0.3.0pre2.orig/src/Makefile.am ext3rminator-0.3.0pre2.linking/src/Makefile.am
+--- ext3rminator-0.3.0pre2.orig/src/Makefile.am	2003-10-12 13:55:03.000000000 +0200
++++ ext3rminator-0.3.0pre2.linking/src/Makefile.am	2006-08-04 19:17:15.000000000 +0200
+@@ -4,4 +4,4 @@
+ 
+ AM_CFLAGS = -Wall
+ 
+-AM_LDFLAGS = -lext2fs
++ext3rminator_LDADD = -lext2fs
