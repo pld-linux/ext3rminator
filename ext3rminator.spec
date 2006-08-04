@@ -8,6 +8,7 @@ License:	GPL v2
 Group:		Applications/System
 Source0:	http://web.glandium.org/debian/repository/experimental/%{name}_0.2.99+%{version}%{_pre}.orig.tar.gz
 # Source0-md5:	450ce0405a2be760a1e9ced200c05c72
+Patch0:		%{name}-linking.patch
 URL:		http://web.glandium.org/debian/repository/experimental/
 BuildRequires:	e2fsprogs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -32,8 +33,12 @@ bloków przy rozmiarze bloku równym zwykle 4096 bajtów) jest ci±g³e.
 
 %prep
 %setup -q -n %{name}-%{version}%{_pre}
+%patch0 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 CFLAGS="-I%{_includedir}/et %{rpmcflags}"
 export CFLAGS
 %configure
