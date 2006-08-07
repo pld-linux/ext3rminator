@@ -10,6 +10,8 @@ Source0:	http://web.glandium.org/debian/repository/experimental/%{name}_0.2.99+%
 # Source0-md5:	450ce0405a2be760a1e9ced200c05c72
 Patch0:		%{name}-linking.patch
 URL:		http://web.glandium.org/debian/repository/experimental/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	e2fsprogs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
