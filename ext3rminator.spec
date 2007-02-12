@@ -1,5 +1,5 @@
 Summary:	Simple program for undeleting files from ext3 partition
-Summary(pl.UTF-8):   Prosty program do odzyskiwania usuniętych plików na partycjach ext3
+Summary(pl.UTF-8):	Prosty program do odzyskiwania usuniętych plików na partycjach ext3
 Name:		ext3rminator
 %define	_pre	pre2
 Version:	0.3.0
