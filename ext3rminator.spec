@@ -1,5 +1,5 @@
 Summary:	Simple program for undeleting files from ext3 partition
-Summary(pl):	Prosty program do odzyskiwania usuniêtych plików na partycjach ext3
+Summary(pl.UTF-8):   Prosty program do odzyskiwania usuniÄ™tych plikÃ³w na partycjach ext3
 Name:		ext3rminator
 %define	_pre	pre2
 Version:	0.3.0
@@ -24,14 +24,14 @@ look like data.
 It is only able to recover files where the 48 first KB (actually, 12
 blocks, a block usually being 4096 bytes) are contiguous.
 
-%description -l pl
-ext3rminator to program ostatniej szansy w przypadku bezmy¶lnego
-usuniêcia wielu megabajtów danych z partycji ext3 (lub ext2).
-Przeszukuje wszystkie wolne bloki w systemie plików w poszukiwaniu
-czego¶, co wygl±da jak dane.
+%description -l pl.UTF-8
+ext3rminator to program ostatniej szansy w przypadku bezmyÅ›lnego
+usuniÄ™cia wielu megabajtÃ³w danych z partycji ext3 (lub ext2).
+Przeszukuje wszystkie wolne bloki w systemie plikÃ³w w poszukiwaniu
+czegoÅ›, co wyglÄ…da jak dane.
 
-Jest w stanie odzyskaæ pliki tylko je¶li pierwsze 48 kB (w³a¶ciwie 12
-bloków przy rozmiarze bloku równym zwykle 4096 bajtów) jest ci±g³e.
+Jest w stanie odzyskaÄ‡ pliki tylko jeÅ›li pierwsze 48 kB (wÅ‚aÅ›ciwie 12
+blokÃ³w przy rozmiarze bloku rÃ³wnym zwykle 4096 bajtÃ³w) jest ciÄ…gÅ‚e.
 
 %prep
 %setup -q -n %{name}-%{version}%{_pre}
